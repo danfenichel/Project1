@@ -30,4 +30,4 @@ Additionally, underneath the generated option, a "Next" button will appear. If t
 * Research Zomato API, create API key, and use AJAX to pull data
 * Research Open Brewery API and use AJAX to pull data (no API key necessary)
 * Incorporate AJAX requests into JavaScript event listeners
-* Complete JavaScript file to 
+* Complete JavaScript file to incorporate all desired functionality
