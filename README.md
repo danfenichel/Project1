@@ -10,7 +10,6 @@
 * SO THAT I can save time and find a place to eat without having to scroll through many options at once
 
 ## Wireframe/sketch
-![Screenshot](Desktop/Proj_1_Wireframe.jpg)
 
 ## APIs to be used
 * Zomato API 
