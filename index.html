@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- <link rel ="stylesheet" type ="text/css" href=".bulma.css"> -->
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 
@@ -36,7 +37,7 @@
 
                 <!-- Dropdown menus for state, restaurant and food types -->
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle btn-large" type="button" id="dropdownMenuButton"
+                    <button class="btn btn-secondary dropdown-toggle btn-large" type="button" id="mySelect" onchange ="dropdownValues()"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Select state
                     </button>
@@ -62,8 +63,8 @@
 
                 <!-- User chooses desired cuisine type -->
                 <div class="dropdown">
-                    <button class="btn btn-large btn-secondary dropdown-toggle btn-large" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-large btn-secondary dropdown-toggle btn-large" type="button"
+                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Select Cuisine Type
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -103,6 +104,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
+    <script src="logic.js"></script>
+
 </body>
 
 </html>
