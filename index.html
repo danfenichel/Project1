@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <!-- <link rel ="stylesheet" type ="text/css" href=".bulma.css"> -->
+    <!-- <link rel ="stylesheet" type ="text/css" href=".bulma.css"> -->
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 
@@ -37,62 +37,119 @@
 
                 <!-- Dropdown menus for state, restaurant and food types -->
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle btn-large" type="button" id="mySelect" onchange ="dropdownValues()"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Select state
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" value="Texas" href="#">Texas</a>
-                        <a class="dropdown-item" value="California" href="#">California</a>
-                        <a class="dropdown-item" value="Colorado" href="#">Colorado</a>
-                        <a class="dropdown-item" value="New York" href="#">New York</a>
+                    <label class="label is-medium"></label>
+                    <div class="control">
+                        <div class="select">
+                            <select>
+                                <option>Choose Your State</option>
+                                <option>Alabama</option>
+                                <option>Alaska</option>
+                                <option>Arizona</option>
+                                <option>Arkansas</option>
+                                <option>California</option>
+                                <option>Colorado</option>
+                                <option>Connecticut</option>
+                                <option>Delaware</option>
+                                <option>Florida</option>
+                                <option>Georgia</option>
+                                <option>Hawaii</option>
+                                <option>Idaho</option>
+                                <option>Illinois</option>
+                                <option>Indiana</option>
+                                <option>Iowa</option>
+                                <option>Kansas</option>
+                                <option>Kentucky</option>
+                                <option>Louisiana</option>
+                                <option>Maine</option>
+                                <option>Maryland</option>
+                                <option>Massachusetts</option>
+                                <option>Michigan</option>
+                                <option>Minnesota</option>
+                                <option>Mississippi</option>
+                                <option>Missouri</option>
+                                <option>Montana</option>
+                                <option>Nebraska</option>
+                                <option>Nevada</option>
+                                <option>New Hampshire</option>
+                                <option>New Jersey</option>
+                                <option>New Mexico</option>
+                                <option>New York</option>
+                                <option>North Carolina</option>
+                                <option>North Dakota</option>
+                                <option>Ohio</option>
+                                <option>Oklahoma</option>
+                                <option>Oregon</option>
+                                <option>Pennsylvania</option>
+                                <option>Rhode Island</option>
+                                <option>South Carolina</option>
+                                <option>South Dakota</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Utah</option>
+                                <option>Vermont</option>
+                                <option>Virginia</option>
+                                <option>Washington</option>
+                                <option>West Virginia</option>
+                                <option>Wisconsin</option>
+                                <option>Wyoming</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
 
                 <!-- User chooses resturant or brewery -->
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle btn-large" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Select Restaurant or Brewery
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Restaurant</a>
-                        <a class="dropdown-item" href="#">Brewery</a>
+                    <label class="label is-medium"></label>
+                    <div class="control">
+                        <div class="select">
+                            <select>
+                                <option>Choose Restaurant or Brewery</option>
+                                <option>Restaurant</option>
+                                <option>Brewery</option>
+                                </select>
+                        </div>
                     </div>
                 </div>
 
                 <!-- User chooses desired cuisine type -->
                 <div class="dropdown">
-                    <button class="btn btn-large btn-secondary dropdown-toggle btn-large" type="button"
-                        id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Select Cuisine Type
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">American</a>
-                        <a class="dropdown-item" href="#">Brunch</a>
-                        <a class="dropdown-item" href="#">Tex-Mex</a>
-                        <a class="dropdown-item" href="#">Mexican</a>
-                        <a class="dropdown-item" href="#">Chinese</a>
-                        <a class="dropdown-item" href="#">Japanese</a>
-                        <a class="dropdown-item" href="#">Korean</a>
-                        <a class="dropdown-item" href="#">Greek</a>
-                        <a class="dropdown-item" href="#">Italian</a>
+                    <label class="label is-medium"></label>
+                    <div class="control">
+                        <div class="select">
+                            <select>
+                                <option>Choose Cuisine Type</option>
+                                <option>American</option>
+                                <option>Brunch</option>
+                                <option>Tex-Mex</option>
+                                <option>Mexican</option>
+                                <option>Chinese</option>
+                                <option>Japanese</option>
+                                <option>Korean</option>
+                                <option>Greek</option>
+                                <option>Italian</option>
+                                </select>
+                        </div>
                     </div>
                 </div>
-                <br>
-                <!-- Dropdown menus should keep their selected values in place. Need to use jquery for this -->
-                <!-- Make it so that the cuisine type dropdown is not available if brewery is chosen -->
-                <!-- Include a message stating that input boxes and dropdown menus must be selected -->
-                <button type="button" id="submit">Find Your Next Favorite Place</button>
-        </div>
 
-        <hr>
+
+
+                <br>
+
+                <!-- Make it so that the cuisine type dropdown is not available if brewery is chosen -->
+                <!-- Include a message stating that input boxes and dropdown menu values must be selected -->
+                <button type="button" id="submit">Find Your Next Favorite Place</button>
+
+                <hr>
+        </div>
 
         <!-- Box that will hold restaurant or brewery info after submit button is clicked -->
         <div class="resultBox">
             <h4>Restaurant & Brewery Results</h4>
             <!-- Restaurant/Brewery info goes here -->
         </div>
+    </div>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
