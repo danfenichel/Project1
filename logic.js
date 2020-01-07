@@ -1,13 +1,3 @@
-// Dropdown Menu: Selected values stay visible after being clicked by user
-function dropdownValues() {
-var x = document.getElementById("mySelect").value;
-}
-dropdownValues();
-
-// Get results for desired restaurant of brewery selection by clicking this button
-function getResults() {
-// Display restaurant/brewery info
-}
 var resultEl = $(".resultBox");
 var cityInputEl = $(".cityBox");
 var submitBtn = $("#submit");
@@ -23,21 +13,12 @@ $("#submit").on("click", function(event) {
         method: "GET"
     }).then(function (response) {
         var cityID = response.location_suggestions[0].id;
-        var queryURL1 = "https://developers.zomato.com/api/v2.1/search?entity_id=" + cityID + "&entity_type=city&count=1&apikey=0be82c0991914e9afe82f36e7fbdf1e6";
+        var queryURL1 = "https://developers.zomato.com/api/v2.1/search?entity_id=" + cityID + "&entity_type=city&count=20&apikey=0be82c0991914e9afe82f36e7fbdf1e6";
         $.ajax({
             url: queryURL1,
             method: "GET"
         }).then(function (response) {
-            // var randomResult = Math.floor((Math.random() * response.results_found) + 1);
-            // // console.log(randomResult);
-            // var queryURL2 = "https://developers.zomato.com/api/v2.1/search?entity_id=" + cityID + "&entity_type=city&start=0&count=1&apikey=0be82c0991914e9afe82f36e7fbdf1e6";
-            // $.ajax({
-            //     url: queryURL2,
-            //     method: "GET"
-            // }).then(function (response) {
-                console.log(response.restaurants[0].restaurant.name);
-                // console.log(response.restaurants);
-            // })
+                console.log(response.restaurants[Math.floor(Math.random() * 20) + 1].restaurant.name);
         });
     });
 });
