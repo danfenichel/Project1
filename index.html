@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <div id="container">
+
+        <!-- Welcome text for program -->
+        <section class="hero">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title is-spaced">Restaurant Randomizer</h1>
+                    <h2 class="subtitle"></h2>
+                    <div class="is-centered"><a class="is-primary" href="#">Use this Helpful
+                            Program to Choose a Restaurant For You!</a></div>
+                </div>
+            </div>
+        </section>
+
+        <br>
+
+        <!-- User inputs go in this div -->
+        <!-- Input box for city -->
+        <div class="user-inputs">
+            <form action="/action_page.php">
+                <input type="text" name="cityName" class="cityBox" placeholder="Enter City Here">
+
+                <!-- Dropdown menus for state, restaurant and food types -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle btn-large" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select state
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" value="Texas" href="#">Texas</a>
+                        <a class="dropdown-item" value="California" href="#">California</a>
+                        <a class="dropdown-item" value="Colorado" href="#">Colorado</a>
+                        <a class="dropdown-item" value="New York" href="#">New York</a>
+                    </div>
+                </div>
+
+                <!-- User chooses resturant or brewery -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle btn-large" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select Restaurant or Brewery
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Restaurant</a>
+                        <a class="dropdown-item" href="#">Brewery</a>
+                    </div>
+                </div>
+
+                <!-- User chooses desired cuisine type -->
+                <div class="dropdown">
+                    <button class="btn btn-large btn-secondary dropdown-toggle btn-large" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select Cuisine Type
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">American</a>
+                        <a class="dropdown-item" href="#">Brunch</a>
+                        <a class="dropdown-item" href="#">Tex-Mex</a>
+                        <a class="dropdown-item" href="#">Mexican</a>
+                        <a class="dropdown-item" href="#">Chinese</a>
+                        <a class="dropdown-item" href="#">Japanese</a>
+                        <a class="dropdown-item" href="#">Korean</a>
+                        <a class="dropdown-item" href="#">Greek</a>
+                        <a class="dropdown-item" href="#">Italian</a>
+                    </div>
+                </div>
+                <br>
+                <!-- Dropdown menus should keep their selected values in place. Need to use jquery for this -->
+                <!-- Make it so that the cuisine type dropdown is not available if brewery is chosen -->
+                <!-- Include a message stating that input boxes and dropdown menus must be selected -->
+                <button>Find Your Next Favorite Place</button>
+        </div>
+
+        <hr>
+
+        <!-- Box that will hold restaurant or brewery info after submit button is clicked -->
+        <div class="resultBox">
+            <h4>Restaurant & Brewery Results</h4>
+            <!-- Restaurant/Brewery info goes here -->
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

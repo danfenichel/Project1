@@ -1,0 +1,40 @@
+/* Title and welcoming text */
+.hero-body {
+text-align: center;
+background-color: orange;
+max-width: 75%;
+margin: 0 auto;
+}
+
+.cityBox {
+  width: 18%;
+  text-align: center;
+}
+
+ /* City textbox, dropdown menus, and submit button */
+.user-inputs {
+  text-align: center;
+  margin: 0 auto;
+
+}
+
+/* Makes the dropdown menus the same width */
+.btn-large {
+  width: 18%;
+}
+
+h4 {
+  text-align: center;
+}
+
+/* Box for resulting restaurant and brewery info= */
+.resultBox {
+  background-color: orange;
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+
+
+
+
