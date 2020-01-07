@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Dropdown Menu: Selected values stay visible after being clicked by user
 function dropdownValues() {
 var x = document.getElementById("mySelect").value;
@@ -9,7 +8,6 @@ dropdownValues();
 function getResults() {
 // Display restaurant/brewery info
 }
-=======
 var resultEl = $(".resultBox");
 var cityInputEl = $(".cityBox");
 var submitBtn = $("#submit");
@@ -29,4 +27,3 @@ $("#submit").on("click", function(event) {
 });
 
 
->>>>>>> master
