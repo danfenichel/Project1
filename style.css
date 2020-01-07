@@ -7,7 +7,7 @@ margin: 0 auto;
 }
 
 .cityBox {
-  width: 18%;
+  width: 25%;
   text-align: center;
 }
 
@@ -15,7 +15,22 @@ margin: 0 auto;
 .user-inputs {
   text-align: center;
   margin: 0 auto;
+}
 
+.control {
+  width: 100%;
+  margin: 0 auto;
+}
+.dropdown {
+  width: 280px;
+}
+
+.select {
+  width: 100%;
+}
+
+.select select {
+  width: 100%;
 }
 
 /* Makes the dropdown menus the same width */
