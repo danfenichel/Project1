@@ -31,11 +31,11 @@
             </div>
         </section>
 
-        <form>
+        <form id="input-form">
             <!-- Enter City Textbox-->
             <div class="field">
                 <div class="control is-centered">
-                    <input class="input" type="text" placeholder="Enter City Here">
+                    <input class="input" id="city-input" type="text" placeholder="Enter City Here">
                 </div>
             </div>
 
@@ -43,9 +43,8 @@
             <div class="field column is-vcentered">
                 <div class="control">
                     <div class="select">
-                        <select>
+                        <select id="state-select">
                             <option>Select State</option>
-                            <option>Choose Your State</option>
                             <option>Alabama</option>
                             <option>Alaska</option>
                             <option>Arizona</option>
@@ -104,7 +103,7 @@
             <div class="field column is-vcentered">
                 <div class="control">
                     <div class="select">
-                        <select>
+                        <select id="type-select">
                             <option>Select Restaurant or Brewery</option>
                             <option>Restaurant</option>
                             <option>Brewery</option>
@@ -116,7 +115,7 @@
             <div class="field column is-vcentered">
                 <div class="control">
                     <div class="select">
-                        <select>
+                        <select id="food-select">
                             <option>Cuisine Type</option>
                             <option>American</option>
                             <option>Brunch</option>
@@ -135,7 +134,7 @@
 
             <div class="field column is-vcentered">
                 <div class="control">
-                    <button class ="button is-primary">Find Your Next Favorite Place</button>
+                    <button class ="button is-primary" id="submit">Find Your Next Favorite Place</button>
                 </div>
             </div>
 
