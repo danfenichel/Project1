@@ -16,153 +16,132 @@
 
 <body>
     <div id="container">
+        <div class="bg-img">
+        </div>
 
         <!-- Welcome text for program -->
-        <section class="hero">
+        <section class="hero has-bg-img">
             <div class="hero-body">
                 <div class="container has-text-centered">
                     <h1 class="title is-spaced">Food Finder</h1>
                     <h2 class="subtitle"></h2>
                     <div class="is-centered">Use this Helpful
-                            Program to Choose a Restaurant For You!</div>
+                        Program to Choose a Restaurant For You!</div>
                 </div>
             </div>
         </section>
 
-        <!-- <div class="columns"> -->
-
-        <!-- User inputs go in this div -->
-        <!-- Input box for city -->
-        <div class="user-inputs">
-            <div class="column
-                <form action="/action_page.php">
-                    <input type="text" name="cityName" class="cityBox" placeholder="Enter City Here">
+        <form>
+            <!-- Enter City Textbox-->
+            <div class="field">
+                <div class="control is-centered">
+                    <input class="input" type="text" placeholder="Enter City Here">
                 </div>
-
-                    <!-- Dropdown menus for state, restaurant and food types -->
-                    <div class ="column">
-                    <div class="dropdown">
-                        <label class="label is-medium"></label>
-                        <div class="control">
-                            <div class="select">
-                                <select>
-                                    <option>Choose Your State</option>
-                                    <option>Alabama</option>
-                                    <option>Alaska</option>
-                                    <option>Arizona</option>
-                                    <option>Arkansas</option>
-                                    <option>California</option>
-                                    <option>Colorado</option>
-                                    <option>Connecticut</option>
-                                    <option>Delaware</option>
-                                    <option>Florida</option>
-                                    <option>Georgia</option>
-                                    <option>Hawaii</option>
-                                    <option>Idaho</option>
-                                    <option>Illinois</option>
-                                    <option>Indiana</option>
-                                    <option>Iowa</option>
-                                    <option>Kansas</option>
-                                    <option>Kentucky</option>
-                                    <option>Louisiana</option>
-                                    <option>Maine</option>
-                                    <option>Maryland</option>
-                                    <option>Massachusetts</option>
-                                    <option>Michigan</option>
-                                    <option>Minnesota</option>
-                                    <option>Mississippi</option>
-                                    <option>Missouri</option>
-                                    <option>Montana</option>
-                                    <option>Nebraska</option>
-                                    <option>Nevada</option>
-                                    <option>New Hampshire</option>
-                                    <option>New Jersey</option>
-                                    <option>New Mexico</option>
-                                    <option>New York</option>
-                                    <option>North Carolina</option>
-                                    <option>North Dakota</option>
-                                    <option>Ohio</option>
-                                    <option>Oklahoma</option>
-                                    <option>Oregon</option>
-                                    <option>Pennsylvania</option>
-                                    <option>Rhode Island</option>
-                                    <option>South Carolina</option>
-                                    <option>South Dakota</option>
-                                    <option>Tennessee</option>
-                                    <option>Texas</option>
-                                    <option>Utah</option>
-                                    <option>Vermont</option>
-                                    <option>Virginia</option>
-                                    <option>Washington</option>
-                                    <option>West Virginia</option>
-                                    <option>Wisconsin</option>
-                                    <option>Wyoming</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Closing tag for column class -->
-            </div>
-
-            <!-- User chooses resturant or brewery -->
-            <div class="column">
-                <div class="dropdown">
-                    <label class="label is-medium"></label>
-                    <div class="control">
-                        <div class="select">
-                            <select>
-                                <option>Choose Restaurant or Brewery</option>
-                                <option>Restaurant</option>
-                                <option>Brewery</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <!-- Closing tag for column class -->
-            </div>
-
-            <!-- User chooses desired cuisine type -->
-            <div class="column">
-                <div class="dropdown">
-                    <label class="label is-medium"></label>
-                    <div class="control">
-                        <div class="select">
-                            <select>
-                                <option>Choose Cuisine Type</option>
-                                <option>American</option>
-                                <option>Brunch</option>
-                                <option>Tex-Mex</option>
-                                <option>Mexican</option>
-                                <option>Chinese</option>
-                                <option>Japanese</option>
-                                <option>Korean</option>
-                                <option>Greek</option>
-                                <option>Italian</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <!-- Closing tag for column class -->
             </div>
 
 
-            <br>
+            <div class="field column is-vcentered">
+                <div class="control">
+                    <div class="select">
+                        <select>
+                            <option>Select State</option>
+                            <option>Choose Your State</option>
+                            <option>Alabama</option>
+                            <option>Alaska</option>
+                            <option>Arizona</option>
+                            <option>Arkansas</option>
+                            <option>California</option>
+                            <option>Colorado</option>
+                            <option>Connecticut</option>
+                            <option>Delaware</option>
+                            <option>Florida</option>
+                            <option>Georgia</option>
+                            <option>Hawaii</option>
+                            <option>Idaho</option>
+                            <option>Illinois</option>
+                            <option>Indiana</option>
+                            <option>Iowa</option>
+                            <option>Kansas</option>
+                            <option>Kentucky</option>
+                            <option>Louisiana</option>
+                            <option>Maine</option>
+                            <option>Maryland</option>
+                            <option>Massachusetts</option>
+                            <option>Michigan</option>
+                            <option>Minnesota</option>
+                            <option>Mississippi</option>
+                            <option>Missouri</option>
+                            <option>Montana</option>
+                            <option>Nebraska</option>
+                            <option>Nevada</option>
+                            <option>New Hampshire</option>
+                            <option>New Jersey</option>
+                            <option>New Mexico</option>
+                            <option>New York</option>
+                            <option>North Carolina</option>
+                            <option>North Dakota</option>
+                            <option>Ohio</option>
+                            <option>Oklahoma</option>
+                            <option>Oregon</option>
+                            <option>Pennsylvania</option>
+                            <option>Rhode Island</option>
+                            <option>South Carolina</option>
+                            <option>South Dakota</option>
+                            <option>Tennessee</option>
+                            <option>Texas</option>
+                            <option>Utah</option>
+                            <option>Vermont</option>
+                            <option>Virginia</option>
+                            <option>Washington</option>
+                            <option>West Virginia</option>
+                            <option>Wisconsin</option>
+                            <option>Wyoming</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
 
-            <!-- Make it so that the cuisine type dropdown is not available if brewery is chosen -->
-            <!-- Include a message stating that input boxes and dropdown menu values must be selected -->
-            <button type="button" id="submit">Find Your Next Favorite Place</button>
+            <div class="field column is-vcentered">
+                <div class="control">
+                    <div class="select">
+                        <select>
+                            <option>Select Restaurant or Brewery</option>
+                            <option>Restaurant</option>
+                            <option>Brewery</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
 
-            <!-- User-inputs closing div -->
-        </div>
+            <div class="field column is-vcentered">
+                <div class="control">
+                    <div class="select">
+                        <select>
+                            <option>Cuisine Type</option>
+                            <option>American</option>
+                            <option>Brunch</option>
+                            <option>Tex-Mex</option>
+                            <option>Mexican</option>
+                            <option>Chinese</option>
+                            <option>Japanese</option>
+                            <option>Korean</option>
+                            <option>Greek</option>
+                            <option>Italian</option>
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field column is-vcentered">
+                <div class="control">
+                    <button class ="button is-primary">Find Your Next Favorite Place</button>
+                </div>
+            </div>
+
+        </form>
 
         <hr>
-
-        <!-- Closing div tag for columns class -->
-        <!-- </div> -->
-
-
-
 
         <!-- Box that will hold restaurant or brewery info after submit button is clicked -->
         <div class="resultBox">

@@ -1,3 +1,6 @@
+.has-bg-img {
+  background-image: url(project1/Project1/Assets/restaurant-pic.jpg);
+
 /* Title and welcoming text */
 .hero-body {
 text-align: center;
@@ -11,17 +14,12 @@ margin: 0 auto;
   text-align: center;
 }
 
- /* City textbox, dropdown menus, and submit button */
-.user-inputs {
-  text-align: center;
-  margin: 0 auto;
+.is-centered {
+ display: flex;
 }
 
-.control {
-  width: 100%;
-  margin: 0 auto;
-}
-.dropdown {
+
+/* .dropdown {
   width: 280px;
 }
 
@@ -31,12 +29,8 @@ margin: 0 auto;
 
 .select select {
   width: 100%;
-}
+} */
 
-/* Makes the dropdown menus the same width */
-.btn-large {
-  width: 18%;
-}
 
 h4 {
   text-align: center;
@@ -44,7 +38,6 @@ h4 {
 
 /* Box for resulting restaurant and brewery info= */
 .resultBox {
-  background-color: orange;
   max-width: 75%;
   margin: 0 auto;
 }
