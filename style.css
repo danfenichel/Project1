@@ -1,11 +1,10 @@
 body {
   background-image: url(./Assets/restaurant-pic.jpg);
   background-size: cover;
-  background-position: center center;
   background-repeat: no-repeat;
-  text-align: center;
+  background-position: center;
+  position: relative;
   margin: auto;
-  height: 100vh;
   width: inherit;
 }
 
@@ -17,13 +16,18 @@ body {
 } */
 
 .title {
-  font-size: xx-large;
-  font-weight: bold;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Exo 2', sans-serif;
+  color: black;
+  text-shadow:
+      -1px -1px 0 whitesmoke,
+      1px -1px 0 whitesmoke,
+      -1px 1px 0 whitesmoke,
+      1px 1px 0 whitesmoke;
+}
+h1 {
+  font-family: 'Yellowtail', cursive;
 }
 
 /* h1 {
@@ -84,6 +88,12 @@ h1:focus {
 
 .subtitle {
   color: orange;
+  font-size: large;
+  text-shadow:
+      -1px -1px 0 black,
+      1px -1px 0 black,
+      -1px 1px 0 black,
+      1px 1px 0 black;
 }
 
 /* Title and welcoming text */
@@ -102,15 +112,39 @@ margin: 15px;
  display: flex;
 }
 
+.is-primary {
+  background-color: orange;
+}
+
 h4 {
   text-align: center;
-  color: orange;
+  color: black;
+  font-family: 'Yellowtail', cursive;
+  text-shadow:
+      -1px -1px 0 orange,
+      1px -1px 0 orange,
+      -1px 1px 0 orange,
+      1px 1px 0 orange;
 }
 
 /* Box for resulting restaurant and brewery info= */
 .resultBox {
+  font-size: xx-large;
+  font-weight: bolder;
   max-width: 75%;
+  height: 400px;
+  width: 800px;
+  border: 1px solid white;
+  border-radius: 25px;
   margin: 0 auto;
+  color: orange;
+  background-color: whitesmoke;
+  opacity: 0.5;
+    text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
 }
 
 @media only screen and (max-width: 320px) {
@@ -134,11 +168,4 @@ width: 300px;
   .resultBox {
     display: none;
   }
-}
-
-
-
-
-
-
-
+}  

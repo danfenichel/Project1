@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./style.css">
 
 </head>
@@ -21,18 +22,18 @@
         <section class="hero">
             <div class="hero-body">
                 <div class="container welcome">
-                <h1 class="title is-spaced">Food & Brew Finder</h1>
-                <h2 class="subtitle">Use this Helpful
-                    Program to Choose a Restaurant For You!</h2>
+                    <h1 class="title is-size-1-desktop is-size-2-mobile">Food & Brew Finder</h1>
+                    <h2 class="subtitle">Use this Helpful
+                        Program to Choose a Restaurant For You!</h2>
                 </div>
             </div>
         </section>
 
-        <form>
+        <form id="input-form">
             <!-- Enter City Textbox-->
             <div class="field">
                 <div class="control is-centered">
-                    <input class="input" type="text" placeholder="Enter City Here">
+                    <input class="input" id="city-input" type="text" placeholder="Enter City Here">
                 </div>
             </div>
 
@@ -40,7 +41,7 @@
             <div class="field column is-vcentered">
                 <div class="control">
                     <div class="select">
-                        <select>
+                        <select id="state-select">
                             <option>Select State</option>
                             <option>Alabama</option>
                             <option>Alaska</option>
@@ -100,7 +101,7 @@
             <div class="field column is-vcentered">
                 <div class="control">
                     <div class="select">
-                        <select>
+                        <select id="type-select">
                             <option>Select Restaurant or Brewery</option>
                             <option>Restaurant</option>
                             <option>Brewery</option>
@@ -112,17 +113,17 @@
             <div class="field column is-vcentered">
                 <div class="control">
                     <div class="select">
-                        <select>
-                            <option>Cuisine Type</option>
-                            <option>American</option>
-                            <option>Breakfast</option>
-                            <option>Tex-Mex</option>
-                            <option>Mexican</option>
-                            <option>Chinese</option>
-                            <option>Japanese</option>
-                            <option>Korean</option>
-                            <option>Greek</option>
-                            <option>Italian</option>
+                        <select id="food-select">
+                            <option value="">Cuisine Type</option>
+                            <option value="1">American</option>
+                            <option value="182">Breakfast</option>
+                            <option value="150">Tex-Mex</option>
+                            <option value="73">Mexican</option>
+                            <option value="25">Chinese</option>
+                            <option value="60">Japanese</option>
+                            <option value="67">Korean</option>
+                            <option value="156">Greek</option>
+                            <option value="55">Italian</option>
                             </option>
                         </select>
                     </div>
@@ -131,7 +132,7 @@
 
             <div class="field column is-vcentered">
                 <div class="control">
-                    <button class ="button is-primary">Find Your Next Favorite Place</button>
+                    <button class="button has-background-info has-text-white-ter" id="submit">Find Your Next Favorite Place</button>
                 </div>
             </div>
 
@@ -140,13 +141,14 @@
         <hr>
 
         <!-- Box that will hold restaurant or brewery info after submit button is clicked -->
+        <h4 class= "is-size-3-desktop">Restaurant & Brewery Results</h4>
         <div class="resultBox">
-            <h4>Restaurant & Brewery Results</h4>
+            
             <!-- Restaurant/Brewery info goes here -->
         </div>
-    </div>
 
     </div>
+    <!-- </div> -->
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -159,6 +161,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="logic.js"></script>
+
 </body>
 
 </html>
