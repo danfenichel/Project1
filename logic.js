@@ -90,6 +90,8 @@ function showBrewery(city) {
 
           <h6>Phone Number: ${brewery.phone}</h6>
 
+          <h6>Link to Website: ${brewery.website_url}</h6>
+
           `)
 
 
