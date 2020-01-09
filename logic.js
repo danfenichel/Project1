@@ -105,6 +105,8 @@ function showBrewery(city) {
 
           <h6>Phone Number: ${brewery.phone}</h6>
 
+          <h6><a href="${brewery.website_url}" target="_blank">Link to Website</a></h6>
+
           `);
 
     });

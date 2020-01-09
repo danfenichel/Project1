@@ -88,6 +88,16 @@ h4 {
       -1px 1px 0 #000,
       1px 1px 0 #000;
 }
+#input-form .field, #input-form .control, #input-form .input, #input-form .select, #input-form .select select {
+  width:100%;
+}
+#input-form .input {
+  margin:0;
+}
+
+#submit {
+  border-color: white;
+}
   
   /* Media Queries for mobile and tablet screens */
 
