@@ -47,6 +47,14 @@ $("#submit").on("click", function (event) {
 
     $("#submit").text("Not Satisfied? Keep Fishing!");
 
+    var matchBtn = $("<button>");
+    var matchLink = $("<a>").text("It's a Match!");
+    matchLink.attr("href", "https://www.opentable.com");
+    matchLink.attr("target", "_blank");
+
+    matchBtn.append(matchLink);
+    $("#button-field").append(matchBtn);
+
     // AJAX query to get city code based on user input (city code needed to do further search)
 
     var city = cityInputEl.val();
@@ -97,12 +105,11 @@ function showBrewery(city) {
 
           <h6>Phone Number: ${brewery.phone}</h6>
 
-          `)
+          `);
 
+    });
 
-    })
-
-}
+};
 
 function showRestuarant(city) {
 
@@ -164,4 +171,4 @@ function showRestuarant(city) {
 
     });
 
-}
+};
