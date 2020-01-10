@@ -116,32 +116,47 @@ h4 {
   
   /* Media Queries for mobile and tablet screens */
 
-@media only screen and (max-width: 320px) {
-  body {
-    
-    background-image: fill;
-  }
-  .input {
-    width: 100%;
-  }
-  .subtitle {
-    display: none;
-  }
-
-  hr {
-    display: none;
-  }
-}
-
-  @media only screen and (max-width: 375px) {
-    .input {
-      width: 100%;
-    }
-  }
-
+/* Mobile Large */
   @media only screen and (max-width: 425px) {
     .input {
       width: 100%;
+    }
+    br {
+      display:none;
+    }
+    #input-form {
+      width: 75% !important;
+    }
+  }
+
+/* Mobile Medium */
+@media only screen and (max-width: 375px) {
+  .input {
+    width: 100%;
+  }
+  br {
+    display: none;
+  }
+  #input-form {
+    width: 85% !important;
+  }
+}
+
+  /* Mobile Small */
+  @media only screen and (max-width: 320px) {
+    body {
+      
+      background-image: fill;
+    }
+    .input {
+      width: 100%;
+    }
+    .subtitle {
+      display: none;
+    }
+  
+    #input-form {
+      width: 88% !important;
     }
   }
 
