@@ -110,6 +110,13 @@ h4 {
   border-color: white;
 }
 
+#match {
+  border-color: white;
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+
 .control #submit {
   margin: 0 auto;
 }
