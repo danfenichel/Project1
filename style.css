@@ -1,20 +1,27 @@
+/* Tint for background image */
+#container {
+  background-image:
+  linear-gradient(
+  rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)
+  )
+ }
+
+/* Elements */
+html {
+  height:100%;
+}
+
 body {
-  background-image: url(./Assets/restaurant-pic.jpg);
+  min-height:100%;
+  background: url(./Assets/restaurant-pic.jpg) no-repeat center center fixed; 
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   position: relative;
   margin: auto;
   width: inherit;
 }
 
-/* @import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
-
-:root {
-  --neon-text-color: #f40;
-  --neon-border-color: #08f;
-} */
-
+/* Text Shadow and font for Title*/
 .title {
   display: flex;
   justify-content: center;
@@ -29,63 +36,7 @@ body {
 h1 {
   font-family: 'Yellowtail', cursive;
 }
-
-/* h1 {
-  font-size: 13rem;
-  font-weight: 200;
-  font-style: italic;
-  color: #fff;
-  padding: 4rem 6rem 5.5rem;
-  border: 0.4rem solid #fff;
-  border-radius: 2rem;
-  text-transform: uppercase;
-  animation: flicker 8s infinite alternate;     
-}
-
-h1::-moz-selection {
-  background-color: var(--neon-border-color);
-  color: var(--neon-text-color);
-}
-
-h1::selection {
-  background-color: var(--neon-border-color);
-  color: var(--neon-text-color);
-}
-
-h1:focus {
-  outline: none;
-}
-
-/* Animate neon flicker */
-/* @keyframes flicker {
-    
-  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-    
-      text-shadow:
-          -0.2rem -0.2rem 1rem #fff,
-          0.2rem 0.2rem 1rem #fff,
-          0 0 2rem var(--neon-text-color),
-          0 0 4rem var(--neon-text-color),
-          0 0 6rem var(--neon-text-color),
-          0 0 8rem var(--neon-text-color),
-          0 0 10rem var(--neon-text-color); */
-/*       
-      box-shadow:
-          0 0 .5rem #fff,
-          inset 0 0 .5rem #fff,
-          0 0 2rem var(--neon-border-color),
-          inset 0 0 2rem var(--neon-border-color),
-          0 0 4rem var(--neon-border-color),
-          inset 0 0 4rem var(--neon-border-color);        
-  }
-  
-  20%, 24%, 55% {        
-      text-shadow: none;
-      box-shadow: none;
-  }    
-}  */
-/* End of Neon sign stuff */
-
+/* Text shadow for welcome message */
 .subtitle {
   color: orange;
   font-size: large;
@@ -106,6 +57,7 @@ margin: 0 auto;
 
 .input {
 margin: 15px;
+width: 30%;
 }
 
 .is-centered {
@@ -147,17 +99,31 @@ h4 {
       -1px 1px 0 #000,
       1px 1px 0 #000;
 }
+#input-form .field, #input-form .control, #input-form .input, #input-form .select, #input-form .select select {
+  width:100%;
+}
+#input-form .input {
+  margin:0;
+}
+
+#submit {
+  border-color: white;
+}
+
+.control #submit {
+  margin: 0 auto;
+}
+  
+  /* Media Queries for mobile and tablet screens */
 
 @media only screen and (max-width: 320px) {
   body {
-    height: 100vh;
+    
     background-image: fill;
   }
-/* Make buttonns and city textbox the same width in mobile */
-  /* .control {
-width: 300px;
-  } */
-
+  .input {
+    width: 100%;
+  }
   .subtitle {
     display: none;
   }
@@ -165,8 +131,17 @@ width: 300px;
   hr {
     display: none;
   }
+}
 
-  .resultBox {
-    display: none;
+  @media only screen and (max-width: 375px) {
+    .input {
+      width: 100%;
+    }
   }
-}  
+
+  @media only screen and (max-width: 425px) {
+    .input {
+      width: 100%;
+    }
+  }
+
