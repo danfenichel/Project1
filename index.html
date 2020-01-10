@@ -29,113 +29,125 @@
             </div>
         </section>
 
-        <form id="input-form">
-            <!-- Enter City Textbox-->
-            <div class="field">
-                <div class="control is-centered">
-                    <input class="input" id="city-input" type="text" placeholder="Enter City Here">
+
+        <div id="banner">
+            <div id="overlay">
+                <div id="content">
+                    <form id="input-form" style="width:55%; margin: 0 auto">
+                        <!-- Darkened overlay -->
+
+
+                        <!-- Enter City Textbox-->
+                        <div class="field">
+                            <div class="control is-centered">
+                                <input class="input" id="city-input" type="text" placeholder="Enter City Here">
+                            </div>
+                        </div>
+
+                        <div class="field is">
+                            <div class="control">
+                                <div class="select">
+                                    <select id="state-select">
+                                        <option>Select State</option>
+                                        <option>Alabama</option>
+                                        <option>Alaska</option>
+                                        <option>Arizona</option>
+                                        <option>Arkansas</option>
+                                        <option>California</option>
+                                        <option>Colorado</option>
+                                        <option>Connecticut</option>
+                                        <option>Delaware</option>
+                                        <option>Florida</option>
+                                        <option>Georgia</option>
+                                        <option>Hawaii</option>
+                                        <option>Idaho</option>
+                                        <option>Illinois</option>
+                                        <option>Indiana</option>
+                                        <option>Iowa</option>
+                                        <option>Kansas</option>
+                                        <option>Kentucky</option>
+                                        <option>Louisiana</option>
+                                        <option>Maine</option>
+                                        <option>Maryland</option>
+                                        <option>Massachusetts</option>
+                                        <option>Michigan</option>
+                                        <option>Minnesota</option>
+                                        <option>Mississippi</option>
+                                        <option>Missouri</option>
+                                        <option>Montana</option>
+                                        <option>Nebraska</option>
+                                        <option>Nevada</option>
+                                        <option>New Hampshire</option>
+                                        <option>New Jersey</option>
+                                        <option>New Mexico</option>
+                                        <option>New York</option>
+                                        <option>North Carolina</option>
+                                        <option>North Dakota</option>
+                                        <option>Ohio</option>
+                                        <option>Oklahoma</option>
+                                        <option>Oregon</option>
+                                        <option>Pennsylvania</option>
+                                        <option>Rhode Island</option>
+                                        <option>South Carolina</option>
+                                        <option>South Dakota</option>
+                                        <option>Tennessee</option>
+                                        <option>Texas</option>
+                                        <option>Utah</option>
+                                        <option>Vermont</option>
+                                        <option>Virginia</option>
+                                        <option>Washington</option>
+                                        <option>West Virginia</option>
+                                        <option>Wisconsin</option>
+                                        <option>Wyoming</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field is-vcentered">
+                            <div class="control">
+                                <div class="select">
+                                    <select id="type-select">
+                                        <option>Select Restaurant or Brewery</option>
+                                        <option id="Restaurant">Restaurant</option>
+                                        <option id="Brewery">Brewery</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field is-vcentered food-choice">
+                            <div class="control">
+                                <div class="select">
+                                    <select id="food-select">
+                                        <option value="">Cuisine Type</option>
+                                        <option value="1">American</option>
+                                        <option value="182">Breakfast</option>
+                                        <option value="150">Tex-Mex</option>
+                                        <option value="73">Mexican</option>
+                                        <option value="25">Chinese</option>
+                                        <option value="60">Japanese</option>
+                                        <option value="67">Korean</option>
+                                        <option value="156">Greek</option>
+                                        <option value="55">Italian</option>
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field is-vcentered">
+                            <div class="control" id="button-field">
+                                <button class="button is-dark" id="submit">Find Your Next Favorite Place</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- Closing divs for overlay -->
                 </div>
             </div>
+        </div>
 
-            <div class="field column is-vcentered">
-                <div class="control">
-                    <div class="select">
-                        <select id="state-select">
-                            <option>Select State</option>
-                            <option>Alabama</option>
-                            <option>Alaska</option>
-                            <option>Arizona</option>
-                            <option>Arkansas</option>
-                            <option>California</option>
-                            <option>Colorado</option>
-                            <option>Connecticut</option>
-                            <option>Delaware</option>
-                            <option>Florida</option>
-                            <option>Georgia</option>
-                            <option>Hawaii</option>
-                            <option>Idaho</option>
-                            <option>Illinois</option>
-                            <option>Indiana</option>
-                            <option>Iowa</option>
-                            <option>Kansas</option>
-                            <option>Kentucky</option>
-                            <option>Louisiana</option>
-                            <option>Maine</option>
-                            <option>Maryland</option>
-                            <option>Massachusetts</option>
-                            <option>Michigan</option>
-                            <option>Minnesota</option>
-                            <option>Mississippi</option>
-                            <option>Missouri</option>
-                            <option>Montana</option>
-                            <option>Nebraska</option>
-                            <option>Nevada</option>
-                            <option>New Hampshire</option>
-                            <option>New Jersey</option>
-                            <option>New Mexico</option>
-                            <option>New York</option>
-                            <option>North Carolina</option>
-                            <option>North Dakota</option>
-                            <option>Ohio</option>
-                            <option>Oklahoma</option>
-                            <option>Oregon</option>
-                            <option>Pennsylvania</option>
-                            <option>Rhode Island</option>
-                            <option>South Carolina</option>
-                            <option>South Dakota</option>
-                            <option>Tennessee</option>
-                            <option>Texas</option>
-                            <option>Utah</option>
-                            <option>Vermont</option>
-                            <option>Virginia</option>
-                            <option>Washington</option>
-                            <option>West Virginia</option>
-                            <option>Wisconsin</option>
-                            <option>Wyoming</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
 
-            <div class="field column is-vcentered">
-                <div class="control">
-                    <div class="select">
-                        <select id="type-select">
-                            <option>Select Restaurant or Brewery</option>
-                            <option id="Restaurant">Restaurant</option>
-                            <option id="Brewery">Brewery</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-
-            <div class="field column is-vcentered food-choice">
-                <div class="control">
-                    <div class="select">
-                        <select id="food-select">
-                            <option value="">Cuisine Type</option>
-                            <option value="1">American</option>
-                            <option value="182">Breakfast</option>
-                            <option value="150">Tex-Mex</option>
-                            <option value="73">Mexican</option>
-                            <option value="25">Chinese</option>
-                            <option value="60">Japanese</option>
-                            <option value="67">Korean</option>
-                            <option value="156">Greek</option>
-                            <option value="55">Italian</option>
-                            </option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-
-            <div class="field column is-vcentered">
-                <div class="control" id="button-field">
-                    <button class="button has-background-info has-text-white-ter" id="submit">Find Your Next Favorite Place</button>
-                </div>
-            </div>
-
-        </form>
 
         <hr>
 
