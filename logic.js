@@ -10,17 +10,21 @@ var selectFoodEl = $("#food-select");
 
 var submitBtn = $("#submit");
 
+var matchBtn = $("#match");
+
 var errorText = $("<p>").text("Please fill out all required fields!");
 
 // CHANGED establishmenttype to type-select
 
 var typeSelect = $("#type-select");
 
+var counter = 0;
+
 // Hides the cuisine select box when user selects "Brewery"
 typeSelect.on("change", function () {
     if (typeSelect.val() === "Brewery") {
-        selectFoodEl.attr("style", "display:none");
-    } else {selectFoodEl.attr("style", "display:block")};
+        $(".test-select").attr("style", "display:none");
+    } else { $(".test-select").attr("style", "display:block") };
 });
 
 $("#submit").on("click", function (event) {
@@ -50,14 +54,22 @@ $("#submit").on("click", function (event) {
     // Adds match button if user decides on option; brings user to Open Table to make reservation
     var matchBtn = $("<button>");
     matchBtn.attr("class", "button is-dark");
-    matchBtn.attr("style", "border-color:white");
-    var matchLink = $("<a>").text("It's a Match!");
-    matchLink.attr("style", "color: red; font-weight: bold");
-    matchLink.attr("href", "https://www.opentable.com");
-    matchLink.attr("target", "_blank");
+    matchBtn.text("It's a Match!");
+    matchBtn.attr("style", "color: red; font-weight: bold; border-color:white");
 
-    matchBtn.append(matchLink);
-    $("#button-field").append(matchBtn);
+    // Makes it so the match button doesn't keep appending with successive clicks
+    if (counter <= 0) {
+        $("#button-field").append(matchBtn);
+        counter++;
+    };
+
+    // Match button directs user to Open Table with restaurant name filled in the search box
+    matchBtn.on("click", function(event){
+        var restaurantName = $("h5").text();
+        console.log(restaurantName);
+        event.preventDefault();
+        window.open(`https://www.opentable.com/s/?term=${restaurantName}&includeTicketedAvailability=true`)
+    });
 
     // AJAX query to get city code based on user input (city code needed to do further search)
 
