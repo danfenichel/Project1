@@ -68,6 +68,7 @@ width: 30%;
   background-color: orange;
 }
 
+/* Restaurant and Brewery Results Text */
 h4 {
   text-align: center;
   color: black;
@@ -79,7 +80,7 @@ h4 {
       1px 1px 0 orange;
 }
 
-/* Box for resulting restaurant and brewery info= */
+/* Result Box: Restaurant and Brewery Results Container */
 .resultBox {
   font-size: xx-large;
   font-weight: bolder;
@@ -123,32 +124,69 @@ h4 {
   
   /* Media Queries for mobile and tablet screens */
 
-@media only screen and (max-width: 320px) {
-  body {
-    
-    background-image: fill;
-  }
-  .input {
-    width: 100%;
-  }
-  .subtitle {
-    display: none;
-  }
-
-  hr {
-    display: none;
-  }
-}
-
-  @media only screen and (max-width: 375px) {
-    .input {
-      width: 100%;
+  @media only screen and (max-width: 1024px) {
+    .button {
+      margin-left: 30% !important;
     }
   }
 
+  /* Tablet */
+  @media only screen and (max-width: 768px) {
+    .button {
+      margin-left: 18% !important;
+    }
+  }
+
+/* Mobile Large */
   @media only screen and (max-width: 425px) {
     .input {
       width: 100%;
+    }
+    br {
+      display:none;
+    }
+    #input-form {
+      width: 75% !important;
+    }
+    .button {
+      margin-left: 10% !important ;
+    }
+  }
+
+/* Mobile Medium */
+@media only screen and (max-width: 375px) {
+  .input {
+    width: 100%;
+  }
+  br {
+    display: none;
+  }
+  #input-form {
+    width: 85% !important;
+  }
+  .button {
+    margin-left: 10% !important;
+  }
+}
+
+  /* Mobile Small */
+  @media only screen and (max-width: 320px) {
+    body {
+      
+      background-image: fill;
+    }
+    .input {
+      width: 100%;
+    }
+    .subtitle {
+      display: none;
+    }
+  
+    #input-form {
+      width: 88% !important;
+    }
+    .button {
+      margin-left: 5% !important;
     }
   }
 
