@@ -47,8 +47,12 @@ $("#submit").on("click", function (event) {
 
     $("#submit").text("Not Satisfied? Keep Fishing!");
 
+    // Adds match button if user decides on option; brings user to Open Table to make reservation
     var matchBtn = $("<button>");
+    matchBtn.attr("class", "button is-dark");
+    matchBtn.attr("style", "border-color:white");
     var matchLink = $("<a>").text("It's a Match!");
+    matchLink.attr("style", "color: red; font-weight: bold");
     matchLink.attr("href", "https://www.opentable.com");
     matchLink.attr("target", "_blank");
 
@@ -104,6 +108,8 @@ function showBrewery(city) {
           <h6>Address: ${brewery.street} ${brewery.city} ${brewery.state}</h6>
 
           <h6>Phone Number: ${brewery.phone}</h6>
+
+          <h6><a href="${brewery.website_url}" target="_blank">Link to Website</a></h6>
 
           `);
 
