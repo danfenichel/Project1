@@ -178,6 +178,8 @@ function showRestuarant(city) {
             restUrl.attr("href", restaurant.url);
 
             restUrl.attr("target", "_blank");
+            
+            restUrl.attr("class", "web-link");
 
             var lineBreak = $("<br>");
 
