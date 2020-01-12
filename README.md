@@ -8,7 +8,7 @@ This application is for the indecisive foodies. It will generate a random restau
 
 Once the user fills in the desired criteria, s/he will hit the "Submit" button and a single restaurant or brewery option will be generated below, with information such as name, description/type of food, address/phone, website, and reviews.
 
-Additionally, underneath the generated option, a "Next" button will appear. If the user does not like the initial option given, s/he can click "Next" and generate a new option. Think Tinder for restaurants/breweries!
+Additionally, the submit button will then become a "Next" button; if the user does not like the initial option given, s/he can click "Next" and generate a new option. A "Match" button will also appear and if the user likes the option given, s/he can click and be brought to Open Table with the restaurant information already filled out to make a reservation. Think Tinder for restaurants/breweries!
 
 ## User Story
 * AS AN indecisive restaurant/brewery attendee
@@ -16,9 +16,9 @@ Additionally, underneath the generated option, a "Next" button will appear. If t
 * SO THAT I can save time/stress and find a place to eat without having to scroll through many options at once
 
 ## Wireframe/sketch
-![Screenshot](Assets/Proj_1_Wireframe.jpg)
+![Screenshot](Assets/page-screenshot.png)
 
-## APIs to be used
+## APIs used
 * Zomato API 
 * Open Brewery API 
 * jQuery
