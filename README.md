@@ -1,7 +1,7 @@
 # Project1
 
 ## Project Title
-Restaurant Randomizer
+Food & Brew Finder
 
 ## Project Description
 This application is for the indecisive foodies. It will generate a random restaurant or brewery in the city/state of the user's choosing, using either the Zomato API (for restaurant) or Open Brewery API (for brewery). The user will specify which type of establishment they prefer and will have the option to also specify type of cuisine they want. If that field is left blank, the app will generate a random establishment of any genre. 
@@ -15,7 +15,7 @@ Additionally, the submit button will then become a "Next" button; if the user do
 * I WANT a website or application to choose a restaurant for me in my chosen area with my chosen criteria
 * SO THAT I can save time/stress and find a place to eat without having to scroll through many options at once
 
-## Wireframe/sketch
+## Screenshot
 ![Screenshot](Assets/page-screenshot.png)
 
 ## APIs used
