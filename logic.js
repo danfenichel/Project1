@@ -29,8 +29,9 @@ typeSelect.on("change", function () {
 
 // Make resultBox appear when submit button is clicked
 function seeAnswer() {
+    console.log("Make results appear")
     var resResult = document.getElementById("resultsDiv");
-    resResult.style.display == "block";
+    resResult.style.display = "block";
 }
 
 // Empty fields error message
