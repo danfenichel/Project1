@@ -124,7 +124,7 @@ function showBrewery(city) {
 
         resultEl.append(`
 
-          <h5>${brewery.name}</h5>
+          <h2>${brewery.name}</h2>
 
           <h6>Address: ${brewery.street} ${brewery.city} ${brewery.state}</h6>
 
