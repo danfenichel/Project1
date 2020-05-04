@@ -112,6 +112,8 @@
                                         <option>Select Restaurant or Brewery</option>
                                         <option id="Restaurant">Restaurant</option>
                                         <option id="Brewery">Brewery</option>
+                                        <!-- Need backend for this -->
+                                        <option id="Either">Either</option>
                                     </select>
                                 </div>
                             </div>
@@ -139,7 +141,8 @@
 
                         <div class="field is-vcentered">
                             <div class="control" id="button-field">
-                                <button class="button is-dark" id="submit">Find Your Next Favorite Place</button>
+                                <button onclick="seeAnswer()" class="button is-dark" id="submit" >Find Your Next Favorite
+                                    Place</button>
                                 <!-- <button class="button is-dark" id="match">It's a Match!</button> -->
                             </div>
                         </div>
@@ -153,7 +156,8 @@
 
         <!-- Box that will hold restaurant or brewery info after submit button is clicked -->
         <h4 class="is-size-3-desktop">Restaurant & Brewery Results</h4>
-        <div class="resultBox">
+        <div style="display:none" id=resultsDiv class="resultBox" >
+     
 
             <!-- Restaurant/Brewery info goes here -->
         </div>

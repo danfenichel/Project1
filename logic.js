@@ -27,6 +27,15 @@ typeSelect.on("change", function () {
     } else { $(".test-select").attr("style", "display:block") };
 });
 
+// Make resultBox appear when submit button is clicked
+function seeAnswer() {
+    console.log("Make results appear")
+    var resResult = document.getElementById("resultsDiv");
+    resResult.style.display = "block";
+}
+
+// Empty fields error message
+
 $("#submit").on("click", function (event) {
 
     event.preventDefault();
@@ -48,13 +57,13 @@ $("#submit").on("click", function (event) {
     errorText.remove();
 
     // Changes text of submit button to tell users to keep cycling through to next options
-
-    $("#submit").text("Not Satisfied? Keep Fishing!");
+    submitBtn.attr("style", "color: white; font-weight: bold; border-color: white");
+    $("#submit").text("New Result!");
 
     // Adds match button if user decides on option; brings user to Open Table to make reservation
     var matchBtn = $("<button>");
     matchBtn.attr("class", "button is-dark");
-    matchBtn.text("It's a Match!");
+    matchBtn.text("Reserve Table");
     matchBtn.attr("style", "color: red; font-weight: bold; border-color:white");
 
     // Makes it so the match button doesn't keep appending with successive clicks
@@ -115,7 +124,7 @@ function showBrewery(city) {
 
         resultEl.append(`
 
-          <h5>${brewery.name}</h5>
+          <h2>${brewery.name}</h2>
 
           <h6>Address: ${brewery.street} ${brewery.city} ${brewery.state}</h6>
 
@@ -161,9 +170,9 @@ function showRestuarant(city) {
 
             var restaurant = response.restaurants[randomNum].restaurant
 
-            var restName = $("<h5>").text(restaurant.name);
+            var restName = $("<h2>").text(restaurant.name);
 
-            var restType = $("<h6>").text("Type of Food: " + restaurant.cuisines)
+            var restType = $("<h6>").text("Cuisine Type: " + restaurant.cuisines)
 
             var restAddr = $("<h6>").text("Address: " + restaurant.location.address);
 
